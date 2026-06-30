@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@use "bootstrap/scss/bootstrap";
+@use "styles/styles";
+@import "swiper/css";
+@import "swiper/css/pagination";
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+::selection {
+  background-color: #8B0000;
+  color: white;
+}

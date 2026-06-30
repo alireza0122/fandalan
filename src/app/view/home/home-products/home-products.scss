@@ -1,0 +1,21 @@
+.all-product{
+  &-btnA{
+    border: 1px solid #FF4D1E;
+    color: #ff4d1e;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+  }
+  &-icon{
+    background-color: #FF4D1E ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
+
+}

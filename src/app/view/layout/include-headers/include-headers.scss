@@ -1,0 +1,42 @@
+.logosite{
+  width: 100%;
+}
+.ule{
+  display: flex;
+
+}
+
+
+//===
+.Link-nav {
+  color: black;
+  transition: .3s;
+  font-size: 14px;
+}
+
+.icon {
+  width: 15px;
+  filter: grayscale(90%);
+  transition: .3s;
+}
+
+.menu-item:hover .Link-nav {
+  color: #dd0000;
+}
+
+.menu-item:hover .icon {
+  filter: grayscale(20%);
+}
+.Btn-sabt{
+  border-bottom: 1px dotted #2BA8B6 ;
+  color: #2BA8B6;
+}
+.btnA{
+  display: flex;
+  justify-content: center;
+  background-color: #32c0cf1a;
+  border-radius: 8px;
+}
+.color-btn{
+  color: #2BA8B6;
+}
