@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './home-banner.scss',
 })
 export class HomeBanner {
-  data:{id:number,title:string}[]=[
-    {id:1,title:'asdf'}
+  data:{id:number,title:string,subtitle:string}[]=[
+    {id:1,title:'asdf',subtitle:'asl'}
   ]
 }

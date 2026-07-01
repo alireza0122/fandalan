@@ -1,1 +1,69 @@
-<p>home-packages works!</p>
+<div class="container my-5">
+  <div class="row">
+    <div class="col-12 ">
+      <div class="d-flex justify-content-center w-100 position-relative align-items-center">
+
+        <svg _ngcontent-ng-c476138383="" xmlns="http://www.w3.org/2000/svg" width="220" height="220"
+             viewBox="0 0 220 220" fill="none" class="position-absolute  -top-10">
+          <path _ngcontent-ng-c476138383="" fill-rule="evenodd" clip-rule="evenodd"
+                d="M131.18 18.7828C125.103 15.4538 117.431 13.9096 110.004 13.9219C102.583 13.9343 94.924
+                 15.5014 88.8811 18.8907L88.8705 18.8967L39.9431 46.0174L39.9413 46.0184C33.5453 49.5605 27.9881 55.5941 24.0416 62.2871C20.095 68.9803 17.5078 76.7592 17.5078 84.0584V135.85C17.5078 143.149 20.095 150.928 24.0416 157.621C27.9875 164.313 33.5435 170.346 39.9382 173.888L39.9431 173.891L88.8858 201.112L88.8962 201.117C94.9375 204.456 102.617 205.998 110.045 205.998C117.474 205.998 125.153 204.456 131.194 201.117L180.147 173.891L180.152 173.888C186.547 170.346 192.103 164.313 196.049 157.621C199.996 150.928 202.583 143.149 202.583 135.85V84.0584C202.583 76.7592 199.996 68.9803 196.049 62.2871C192.103 55.5945 186.546 49.5613 180.15 46.0191L180.147 46.0174L131.205 18.7965L131.18 18.7828ZM93.1784 26.5701C97.5838 24.0969 103.67 22.7325 110.018 22.7219C116.358 22.7114 122.476 24.0523 126.94 26.4941L126.952 26.5006L175.885 53.716C180.117 56.0594 184.211 60.1392 187.441 65.0989L109.998 109.957L32.6045 65.1685C35.8412 60.1774 39.9541 56.0703 44.2059 53.716L93.1576 26.5817L93.1784 26.5701ZM28.5838 73.0091C27.1141 76.8077 26.3078 80.6181 26.3078 84.0584V135.85C26.3078 141.2 28.2582 147.447 31.6219 153.151C34.9855 158.856 39.511 163.592 44.2059 166.192L44.2131 166.196L93.1527 193.415L93.1569 193.418C96.5249 195.278 100.889 196.502 105.599 196.976V117.578L28.5838 73.0091ZM114.399 196.985C119.146 196.518 123.545 195.29 126.935 193.417L126.938 193.415L175.877 166.196L175.885 166.192C180.58 163.592 185.105 158.856 188.469 153.151C191.832 147.447 193.783 141.2 193.783 135.85V84.0584C193.783 80.5945 192.965 76.7555 191.476 72.931L114.399 117.577V196.985Z"
+                fill="#F2F2F2"></path>
+        </svg>
+        <div class="z-3 text-center d-flex justify-content-center align-items-center flex-column">
+          <h4 class="fs-18px h4  my1">خلاق پکیج</h4>
+          <h4 class="fs-28px   my1">بسته‌های خلاقانه چندمحصولی</h4>
+          <p class="text-color fs-16px my1">
+            در این بخش چند محصول یا خدمت خلاقانه به صورت پکیج جمع‌آوری شده و شرایط دریافت آن با جزئیات توضیح داده شده است.
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-12 mt-5">
+      <owl-carousel-o [options]="customOptions">
+
+        @for (item of slides; track item) {
+          <ng-template carouselSlide>
+            <div class="home-packages p-2 pt-4">
+              <div class="home-packages-title">
+              </div>
+              <div class="home-packages-list">
+                <div class="home-packages-list-item p-2">
+                  <div class="home-packages-list-item-image">
+                    <img class="home-packages-list-item-image-img"
+                         [src]="item.urlImg"
+                         [alt]="item.title">
+                  </div>
+                  <div class="home-packages-list-item-body p-2">
+                    <div class="d-flex justify-content-between align-items-center my-2">
+                      <img class="home-packages-list-item-body-icon"
+                           [src]="item.icon"
+                           [alt]="item.title">
+                      <p class="fs-14px m-0">{{item.qty }}</p>
+                    </div>
+                    <h4 class="fs-16px">
+                      {{item.title}}
+                    </h4>
+                  </div>
+                  <div class="home-packages-list-item-footer">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </ng-template>
+        }
+
+      </owl-carousel-o>
+
+    </div>
+    <div class="col-12 my-2">
+      <div class="d-flex justify-content-center">
+        <button class="btn-All p-2">مشاهده هــــمه</button>
+      </div>
+    </div>
+  </div>
+</div>

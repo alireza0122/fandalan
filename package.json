@@ -12,10 +12,12 @@
   "private": true,
   "packageManager": "npm@11.12.1",
   "dependencies": {
+    "@angular/cdk": "^22.0.2",
     "@angular/common": "^22.0.0",
     "@angular/compiler": "^22.0.0",
     "@angular/core": "^22.0.0",
     "@angular/forms": "^22.0.0",
+    "@angular/material": "^22.0.2",
     "@angular/platform-browser": "^22.0.0",
     "@angular/platform-server": "^22.0.0",
     "@angular/router": "^22.0.0",
@@ -23,7 +25,9 @@
     "@fortawesome/fontawesome-free": "^7.3.0",
     "bootstrap": "^5.3.8",
     "express": "^5.1.0",
+    "jquery": "^4.0.0",
     "ngx-owl-carousel-o": "^21.0.3",
+    "owl.carousel": "^2.3.4",
     "rxjs": "~7.8.0",
     "swiper": "^14.0.1",
     "tslib": "^2.3.0"

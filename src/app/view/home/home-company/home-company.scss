@@ -1,0 +1,46 @@
+.h4 {
+  color: #2ba8b6;
+}
+
+.home-company{
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #E6E6E7;
+  position: relative;
+
+
+  &-list {
+
+
+    &-item {
+
+
+      &-image{
+        &-icon{
+          border-radius: 8px;
+          background-color: white;
+          width: 100px !important;
+          position: absolute;
+          top: -50%;
+        }
+      }
+
+      &-body {
+
+
+
+      }
+    }
+  }
+}
+.btn-All{
+  border: 1px solid #FF4D1E;
+  color: #ff4d1e;
+  border-radius: 16px;
+  box-shadow: 2px 2px 4px #c1c1c14d;
+
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+}

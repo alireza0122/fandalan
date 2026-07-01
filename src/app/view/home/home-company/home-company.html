@@ -1,9 +1,47 @@
-<div class="container">
+<div class="container ">
   <div class="row">
-    <div class="col-12">
-      <app-shared-slider
-        [products]="books">
-      </app-shared-slider>
+    <div class="col-12 mt-5">
+      <owl-carousel-o [options]=" customOptions">
+
+        @for (item of slides; track item) {
+          <ng-template carouselSlide>
+            <div class="home-company p-2 pt-4">
+              <div class="home-company-title">
+              </div>
+              <div class="home-company-list">
+                <div class="home-company-list-item p-2">
+                  <div class="home-company-list-item-image">
+                    <img class="home-company-list-item-image-icon"
+                         [src]="item.icon"
+                         [alt]="item.title">
+                  </div>
+                  <div class="home-company-list-item-body p-2">
+                    <div class="d-flex justify-content-between align-items-center my-2">
+
+                      <p class="fs-14px m-0">{{item.qty }}</p>
+                    </div>
+                    <h4 class="fs-16px">
+                      {{item.title}}
+                    </h4>
+                  </div>
+                  <div class="home-company-list-item-footer">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </ng-template>
+        }
+
+      </owl-carousel-o>
+
+    </div>
+    <div class="col-12 my-2">
+      <div class="d-flex justify-content-center">
+        <button class="btn-All p-2">مشاهده هــــمه</button>
+      </div>
     </div>
   </div>
 </div>

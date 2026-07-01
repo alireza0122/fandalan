@@ -3,6 +3,7 @@ import { HomeBanner } from './home-banner/home-banner';
 import { HomeProducts } from './home-products/home-products';
 import { SharedBox } from '../shared/shared-box/shared-box';
 import { HomeCompany } from './home-company/home-company';
+import { HomePackages } from './home-packages/home-packages';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,8 @@ import { HomeCompany } from './home-company/home-company';
     HomeBanner,
     HomeProducts,
     SharedBox,
-    HomeCompany
+    HomeCompany,
+    HomePackages
   ],
   templateUrl: './home.html',
   styleUrl: './home.scss',
