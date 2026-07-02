@@ -3,10 +3,6 @@
 }
 
 .home-company{
-  width: 100%;
-  background-color: #ffffff;
-  border-radius: 16px;
-  border: 1px solid #E6E6E7;
   position: relative;
 
 
@@ -14,15 +10,28 @@
 
 
     &-item {
+      width: 100%;
+      background-color: #ffffff;
+      border-radius: 16px;
+      border: 1px solid #E6E6E7;
+      aspect-ratio: 9/4;
+      position: relative;
 
 
       &-image{
         &-icon{
-          border-radius: 8px;
+          border-radius: 10px;
           background-color: white;
-          width: 100px !important;
+          width: 70px !important;
           position: absolute;
-          top: -50%;
+          top: 0;
+          box-shadow: 0 2px 4px #c1c1c14d;
+          border: 1px solid #E6E6E7;
+          aspect-ratio: 1/1;
+          right: 25px;
+          padding: 10px;
+          z-index: 10;
+
         }
       }
 
@@ -34,13 +43,30 @@
     }
   }
 }
-.btn-All{
-  border: 1px solid #FF4D1E;
-  color: #ff4d1e;
-  border-radius: 16px;
-  box-shadow: 2px 2px 4px #c1c1c14d;
+.all-product{
+  &-btnA{
+    border: 1px solid #FF4D1E;
+    color: #ff4d1e;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+  }
+  &-icon{
+    background-color: #FF4D1E ;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+  }
 
-  display: flex;
-  justify-content: center;
-  align-items:center ;
+}
+.text{
+  position: absolute;
+  bottom: 0;
+  right:  0;
+  color: #30a8b5;
 }

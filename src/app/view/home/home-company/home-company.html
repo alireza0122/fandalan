@@ -1,28 +1,42 @@
 <div class="container ">
   <div class="row">
-    <div class="col-12 mt-5">
+    <div class="col-12 mt-3">
       <owl-carousel-o [options]=" customOptions">
 
         @for (item of slides; track item) {
           <ng-template carouselSlide>
-            <div class="home-company p-2 pt-4">
+            <div class="home-company p-2 pt-5  ">
               <div class="home-company-title">
               </div>
               <div class="home-company-list">
-                <div class="home-company-list-item p-2">
-                  <div class="home-company-list-item-image">
-                    <img class="home-company-list-item-image-icon"
-                         [src]="item.icon"
-                         [alt]="item.title">
-                  </div>
-                  <div class="home-company-list-item-body p-2">
-                    <div class="d-flex justify-content-between align-items-center my-2">
+                <div class="home-company-list-item-image">
+                  <img class="home-company-list-item-image-icon"
+                       [src]="item.icon"
+                       [alt]="item.title">
+                </div>
+                <div class="home-company-list-item  p-2">
 
-                      <p class="fs-14px m-0">{{item.qty }}</p>
-                    </div>
-                    <h4 class="fs-16px">
-                      {{item.title}}
+                  <div class="home-company-list-item-body p-4">
+
+                    <h4 class="fs-16px py-1">
+                      {{ item.title }}
                     </h4>
+                    <div class="text ">
+                      <div class="d-flex p-3">
+                        <p class="fs-14px m-0   ">{{ item.qty }}</p>
+                        <svg _ngcontent-ng-c4073229493="zz" xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                             viewBox="0 0 21 21" fill="none">
+                          <path _ngcontent-ng-c4073229493="zz"
+                                d="M14 7.65625C13.6413 7.65625 13.3438 7.35875 13.3438 7V3.9375C13.3438 2.9925 12.7575 2.40625 11.8125 2.40625H9.1875C8.2425 2.40625 7.65625 2.9925 7.65625 3.9375V7C7.65625 7.35875 7.35875 7.65625 7 7.65625C6.64125 7.65625 6.34375 7.35875 6.34375 7V3.9375C6.34375 2.26625 7.51625 1.09375 9.1875 1.09375H11.8125C13.4837 1.09375 14.6562 2.26625 14.6562 3.9375V7C14.6562 7.35875 14.3588 7.65625 14 7.65625Z"
+                                fill="#2BA8B6"></path>
+                          <path _ngcontent-ng-c4073229493="zz"
+                                d="M7.00047 15.5575C6.64172 15.5575 6.34422 15.26 6.34422 14.9013C6.34422 14.5338 6.64172 14.245 7.00047 14.245H17.2905C17.553 14.245 17.7542 14.0175 17.728 13.755L17.133 8.77625C16.923 7.07875 16.6255 5.6875 13.6505 5.6875H7.35047C4.37547 5.6875 4.07797 7.07875 3.87672 8.77625L3.08922 15.3388C2.83547 17.4913 3.50047 19.25 6.57172 19.25H14.4292C17.1942 19.25 18.008 17.8237 17.9642 15.9688C17.9555 15.7325 17.763 15.5575 17.5267 15.5575H7.00047Z"
+                                fill="#2BA8B6"></path>
+                        </svg>
+                      </div>
+
+                    </div>
+
                   </div>
                   <div class="home-company-list-item-footer">
 
@@ -39,8 +53,17 @@
 
     </div>
     <div class="col-12 my-2">
-      <div class="d-flex justify-content-center">
-        <button class="btn-All p-2">مشاهده هــــمه</button>
+      <div class="all-product  align-items-center d-flex justify-content-between">
+        <p class="text-black">
+          مجموعا 27 مورد
+        </p>
+        <button class="all-product-btnA p-3 d-flex justify-content-between gap-2">
+            <span>
+            همه محصولات
+            </span>
+          <i class="fa-solid fa-angle-left all-product-icon p-2"></i>
+        </button>
+
       </div>
     </div>
   </div>
