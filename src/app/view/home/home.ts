@@ -5,6 +5,9 @@ import { SharedBox } from '../shared/shared-box/shared-box';
 import { HomeCompany } from './home-company/home-company';
 import { HomePackages } from './home-packages/home-packages';
 import { HomeTablig } from './home-tablig/home-tablig';
+import { HomeCsv } from './home-csv/home-csv';
+import { HomeCompanies } from './home-companies/home-companies';
+import { HomeCustomers } from './home-customers/home-customers';
 
 @Component({
   selector: 'app-home',
@@ -14,7 +17,10 @@ import { HomeTablig } from './home-tablig/home-tablig';
     SharedBox,
     HomeCompany,
     HomePackages,
-    HomeTablig
+    HomeTablig,
+    HomeCsv,
+    HomeCompanies,
+    HomeCustomers
   ],
   templateUrl: './home.html',
   styleUrl: './home.scss',

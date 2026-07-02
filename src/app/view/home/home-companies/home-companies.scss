@@ -1,0 +1,38 @@
+.color{
+  color: #ff4d1e;
+}
+.home-companies-list-item-bodyc{
+  background-color: white;
+  border: 1px solid #D4D4D4;
+  border-radius: 15px;
+}
+.fa-angle-left{
+  background-color:white ;
+  color: #2BA8B6 !important;
+  width: 25px;
+  height: 25px;
+  padding: 10px;
+  display: flex;
+  align-items:  center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.btn-cvs{
+  background-color: #2ba8b6;
+  border: 1px solid #2ba8b6;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-radius: 15px;
+  align-items: center;
+  gap: 20px;
+}
+.home-companies-list-item-image{
+  border-radius: 15px;
+
+  padding: 10px;
+  background-color: #fcf4e8 ;
+  width: 60px;
+  height: 60px;
+}
