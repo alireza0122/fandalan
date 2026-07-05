@@ -8,6 +8,7 @@ import { HomeTablig } from './home-tablig/home-tablig';
 import { HomeCsv } from './home-csv/home-csv';
 import { HomeCompanies } from './home-companies/home-companies';
 import { HomeCustomers } from './home-customers/home-customers';
+import { HomeEvents } from './home-events/home-events';
 
 @Component({
   selector: 'app-home',
@@ -20,7 +21,8 @@ import { HomeCustomers } from './home-customers/home-customers';
     HomeTablig,
     HomeCsv,
     HomeCompanies,
-    HomeCustomers
+    HomeCustomers,
+    HomeEvents
   ],
   templateUrl: './home.html',
   styleUrl: './home.scss',

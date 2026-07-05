@@ -1,60 +1,67 @@
-<div class="container my-4">
-  <div class="row align-items-center d-flex">
-    <div class="col-1">
-      <img class="logosite " src="/img/logoTitle.svg">
-    </div>
-    <div class="col-6">
-        <ul class="ule m-0 d-flex gap-4">
-          <li class="menu-item d-flex align-items-center gap-1">
-            <img class="icon " src="/img/homeHover.svg" alt="icon">
-            <a class="Link-nav" href="/">خانه </a>
+<header class="header" [class.header--scrolled]="isScrolled">
+  <div class="container my-2">
+    <div class="row align-items-center d-flex">
+
+<!--      <div class="col-lg-1 d-none d-lg-block"></div>-->
+
+      <div class="col-6 col-lg-2">
+        <div class="d-flex justify-content-lg-end justify-content-start ">
+          <img class="w-100 logosite" src="/img/logoTitle.svg" alt="logo">
+        </div>
+      </div>
+
+      <div class="col-6 d-flex justify-content-end d-lg-none">
+        <button class="hamburger-btn" (click)="toggleMenu()" aria-label="toggle menu">
+          <span *ngIf="!isOpen">&#9776;</span>
+          <span *ngIf="isOpen">&#10005;</span>
+        </button>
+      </div>
+
+      <div class="col-lg-6 d-none d-lg-block ">
+        <ul class="ule m-0 d-flex gap-3 p-0">
+          <li class="menu-item d-flex align-items-center gap-1" *ngFor="let item of navItems">
+            <img class="icon" [src]="item.icon" alt="icon">
+            <a class="Link-nav" [href]="item.href">{{ item.title }}</a>
           </li>
-          <li class="menu-item d-flex align-items-center gap-1">
-            <img class="icon " src="/img/shopping-bagHover.svg" alt="icon">
-            <a class="Link-nav" href="/">محصولات </a>
-            </li>
-          <li class="menu-item d-flex align-items-center gap-1">
-            <img class="icon " src="/img/buildingsHover.svg" alt="icon">
-            <a class="Link-nav" href="/">شرکت‌ها</a>
-            </li>
-          <li class="menu-item d-flex align-items-center gap-1">
-            <img class="icon " src="/img/CSVHover.svg" alt="icon">
-            <a class="Link-nav" href="/">csv </a>
-            </li>
-          <li class="menu-item d-flex align-items-center gap-1">
-            <img class="icon " src="/img/medal-starHover.svg" alt="icon">
-            <a class="Link-nav" href="/">اعتباربخشی </a>
-            </li>
-          <li class="menu-item d-flex align-items-center gap-1">
-            <img class="icon " src="/img/33Hover.svg" alt="icon">
-            <a class="Link-nav" href="/"> قرارداد 3جانبه </a>
-            </li>
         </ul>
       </div>
-    <div class="col-2">
 
-    </div>
-    <div class="col-3">
-      <div class="d-flex align-items-center justify-content-end gap-1">
-        <div class="Btn-sabt">
-          <img src="/img/AddProduct.svg" alt="AddProduct">
-          <a class="color-btn fs-14px" href="/">
-            ثبت محصول
-          </a>
 
-        </div>
-        <div class="btnA p-3">
-
-          <img class="user-square" src="/img/user-square.svg">
-
-          <a href="/" class="fs-14px text-black">
-            ورود / عضویت
-          </a>
+      <div class="col-lg-4 d-none d-lg-block">
+          <div class="d-flex align-items-center justify-content-end     gap-1">
+          <div class="Btn-sabt">
+            <img src="/img/AddProduct.svg" alt="AddProduct">
+            <a class="color-btn fs-14px fw-bold" href="/">ثبت محصول</a>
+          </div>
+          <div class="btnA p-3">
+            <img class="user-square" src="/img/user-square.svg" alt="user">
+            <a href="/" class="fs-14px text-black fw-bold">ورود / عضویت</a>
+          </div>
         </div>
       </div>
 
     </div>
+
+    <div class="mobile-menu" [class.open]="isOpen">
+      <div class="mobile-buttons">
+        <img class="w-50" src="/img/logoTitle.svg" alt="icon">
+        <div class="btnA p-3">
+          <img class="user-square" src="/img/user-square.svg" alt="user">
+          <a href="/" class="fs-14px text-black">ورود / عضویت</a>
+        </div>
+      <ul class="mt-5">
+        <li class="mobile-item" *ngFor="let item of navItems">
+          <img class="icon" [src]="item.icon" alt="icon">
+          <a class="Link-nav" [href]="item.href" (click)="closeMenu()">{{ item.title }}</a>
+        </li>
+      </ul>
+        <div class="Btn-sabt my-5">
+          <img src="/img/AddProduct.svg" alt="AddProduct">
+          <a class="color-btn fs-14px" href="/">ثبت محصول</a>
+        </div>
+
+      </div>
+    </div>
+
   </div>
-</div>
-
-
+</header>

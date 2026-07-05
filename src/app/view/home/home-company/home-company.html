@@ -18,12 +18,11 @@
 
                   <div class="home-company-list-item-body p-4">
 
-                    <h4 class="fs-16px py-1">
+                    <h4 class="fs-16px py-1 text-over o1">
                       {{ item.title }}
                     </h4>
                     <div class="text ">
-                      <div class="d-flex p-3">
-                        <p class="fs-14px m-0   ">{{ item.qty }}</p>
+                      <div class="d-flex p-3 gap-1">
                         <svg _ngcontent-ng-c4073229493="zz" xmlns="http://www.w3.org/2000/svg" width="21" height="21"
                              viewBox="0 0 21 21" fill="none">
                           <path _ngcontent-ng-c4073229493="zz"
@@ -33,6 +32,9 @@
                                 d="M7.00047 15.5575C6.64172 15.5575 6.34422 15.26 6.34422 14.9013C6.34422 14.5338 6.64172 14.245 7.00047 14.245H17.2905C17.553 14.245 17.7542 14.0175 17.728 13.755L17.133 8.77625C16.923 7.07875 16.6255 5.6875 13.6505 5.6875H7.35047C4.37547 5.6875 4.07797 7.07875 3.87672 8.77625L3.08922 15.3388C2.83547 17.4913 3.50047 19.25 6.57172 19.25H14.4292C17.1942 19.25 18.008 17.8237 17.9642 15.9688C17.9555 15.7325 17.763 15.5575 17.5267 15.5575H7.00047Z"
                                 fill="#2BA8B6"></path>
                         </svg>
+
+                        <p class="fs-14px m-0 px-1  "> بـا {{ item.qty }}</p>
+
                       </div>
 
                     </div>
@@ -57,10 +59,8 @@
         <p class="text-black">
           مجموعا 27 مورد
         </p>
-        <button class="all-product-btnA p-3 d-flex justify-content-between gap-2">
-            <span>
+        <button class="all-product-btnA  d-flex justify-content-between gap-2 fs-18px fw-bold">
             همه محصولات
-            </span>
           <i class="fa-solid fa-angle-left all-product-icon p-2"></i>
         </button>
 

@@ -1,8 +1,16 @@
 .img-box{
-  border: 1px solid #e6e6e7;
   border-radius: 15px !important;
 }
 .img-box img{
-
   border-radius: 15px !important;
+
+}
+.img{
+    width: 100% !important;
+  height: 80%;
+  border: 1px solid #e6e6e7;
+  object-fit: contain;
+}
+.custom-container {
+  max-width: 1180px;
 }

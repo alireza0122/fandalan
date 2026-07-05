@@ -1,52 +1,49 @@
-.home-product{
+.home-product {
   background-color: #ffffff;
   box-shadow: 0 2px 4px #c1c1c14d;
   border-radius: 16px;
   width: 100%;
-  aspect-ratio: 8 / 10.3;
-  &-title{
+
+  aspect-ratio: 1 / 1.3;
+
+  &-title {
 
   }
-  &-list{
-    &-item{
-      &:after{
+
+  &-list {
+    &-item {
+      &:after {
 
       }
-      &:hover{}
 
-      &-image{
-        &-img{
+      &:hover {
+      }
+
+      &-image {
+        &-img {
           width: 100%;
           aspect-ratio: 2/1;
           border-radius: 16px 16px 0 0;
 
         }
       }
-      &-body{
+
+      &-body {
         position: relative;
 
-        &-title{
-          font-size: 14px;
+        &-title {
 
+          min-height: calc(1.4em * 2); // 1.4 = line-height تقریبی، با فونت خودت تنظیم کن
+          line-height: 1.4;
         }
-        &-subtitle{
+
+        &-subtitle {
           color: #ff4d1e;
 
         }
-        &-h4{
 
+        &-h4 {
           font-size: 14px;
-          &:after{
-            content: " ";
-            width: 3px;
-            border-radius: 2px;
-            height: 100%;
-            position: absolute;
-            background: #ff4d1e;
-            right: 0;
-            top: 0;
-            bottom: 0;
-          }
           position: relative;
           border: 1px solid #E6E6E7;
           border-radius: 8px;
@@ -55,28 +52,124 @@
           -webkit-line-clamp: 1;
           line-clamp: 1;
           -webkit-box-orient: vertical;
+          overflow: hidden;
+          cursor: pointer;
+          transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+
+          &:after {
+            content: " ";
+            width: 3px;
+            border-radius: 2px;
+            height: 30%;
+            position: absolute;
+            background: #ff4d1e;
+            right: 5px;
+            top: 8%;
+            bottom: 0;
+            transition: width 0.3s ease, box-shadow 0.3s ease;
+
+          }
+
+          &:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(255, 77, 30, 0.06) 0%, rgba(255, 77, 30, 0) 60%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+
+          }
+
+          &:hover {
+            border-color: #ff4d1e;
+            box-shadow: 0 6px 16px rgba(255, 77, 30, 0.18);
+            transform: translateY(-3px);
+
+
+            &:before {
+              opacity: 1;
+            }
+
+            &:after {
+              width: 4px;
+              height: 80%;
+
+              box-shadow: 0 0 10px rgba(255, 77, 30, 0.65);
+              animation: bar-pulse 1.2s ease-in-out infinite;
+            }
+          }
+
+          &:active {
+            transform: translateY(-1px) scale(0.98);
+          }
         }
 
+        @keyframes bar-pulse {
+          0%, 100% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0.5;
+          }
+        }
       }
-      &-footer{
+
+      &-footer {
         position: absolute;
         bottom: 0;
         width: 100%;
-        &-boxText{
+        transition: all 0.3s ease;
+
+        &-boxText {
           background-color: #2ba8b61a;
           color: #2ba8b6;
-          font-size: 13px;
           border-radius: 14px;
           align-self: center;
           margin: 0;
+          transition: all 0.3s ease;
+          cursor: pointer;
         }
-        &-icon{
+
+        &-icon {
           background-color: #30a8b5;
           color: white;
           border-radius: 50%;
-          width: auto;
+          width: 36px;
+          height: 36px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 14px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          animation: pulse-icon 2.5s infinite;
+        }
+
+        &:hover {
+          .home-product-list-item-footer-boxText {
+            background-color: #2ba8b6;
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(43, 168, 182, 0.35);
+          }
+
+          .home-product-list-item-footer-icon {
+            background-color: #238b96;
+            transform: translateX(-6px) rotate(-8deg);
+            box-shadow: 0 4px 14px rgba(43, 168, 182, 0.5);
+          }
         }
       }
+
+      @keyframes pulse-icon {
+        0%, 100% {
+          box-shadow: 0 0 0 0 rgba(48, 168, 181, 0.4);
+        }
+        50% {
+          box-shadow: 0 0 0 6px rgba(48, 168, 181, 0);
+        }
+      }
+
     }
   }
 }

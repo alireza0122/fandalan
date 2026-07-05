@@ -13,12 +13,30 @@ import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class HomeCompany {
   customOptions: OwlOptions = {
-    // loop:  ,
-    // nav: true,
-    dots: true,
-    items: 4,
+    // loop: true,
     rtl: true,
-    margin: 25
+    dots: true,
+    // nav: false,
+    margin: 20,
+    autoplay: false,
+
+    responsive: {
+      0: {
+        items: 1
+      },
+      576: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      992: {
+        items: 4
+      },
+      1200: {
+        items: 5
+      }
+    }
   };
 
   slides = [

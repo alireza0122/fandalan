@@ -1,8 +1,18 @@
 .margin{
-  margin-top: 150px;
-  padding-left: 150px !important;
-  padding-right:  150px !important;
+  margin-top: 50px;
+
 }
+
 .img-banner{
   width: 100%;
+}
+
+@media (min-width: 1040px) {
+  .margin{
+    margin-top: 140px;
+
+    //padding-left: 100px !important;
+    //padding-right:  100px !important;
+  }
+
 }
