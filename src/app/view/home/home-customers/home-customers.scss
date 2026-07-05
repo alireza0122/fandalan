@@ -11,6 +11,9 @@
   border: 1px solid #e6e6e7;
   object-fit: contain;
 }
-.custom-container {
-  max-width: 1180px;
+@media (min-width: 1000px) {
+
+  .custom-container {
+    max-width: 1180px;
+  }
 }

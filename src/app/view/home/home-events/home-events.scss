@@ -1,21 +1,81 @@
-.btn-All{
+.home-packages {
+  background-color: white;
+  border: 1px solid #E6E6E7;
+  border-radius: 16px;
+  max-width: 300px;
+  &-list {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 16px;
+
+
+    position: relative;
+    z-index: 0 !important;
+
+    &-item {
+
+
+      &-image{
+        &-img{
+          border-radius: 8px;
+          width: 100%;
+        }
+      }
+
+      &-body {
+
+      &-box-date{
+        background-color: #f8f8f8;
+
+      }
+
+        &-date{
+          color: #54c47d;
+        }
+        &-icon {
+          width: 32px !important;
+        }
+      }
+    }
+  }
+}
+p{
+  margin: 0;
+}
+.btn-All {
   border: 1px solid #FF4D1E;
   color: #ff4d1e;
   border-radius: 16px;
   box-shadow: 2px 2px 4px #c1c1c14d;
-
+  background-color: transparent;
   display: flex;
   justify-content: center;
-  align-items:center ;
+  align-items: center;
 }
-.fa-angle-left{
+.btn-price {
+  border: 1px solid #FF4D1E;
+  padding: 0 12px;
+  color: #ff4d1e;
+  border-radius: 16px;
+  box-shadow: 2px 2px 4px #c1c1c14d;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-angle-left {
   background-color: #FF4D1E;
   color: white !important;
   width: 25px;
   height: 25px;
   padding: 10px;
   display: flex;
-  align-items:  center;
+  align-items: center;
   justify-content: center;
+  border-radius: 50%;
+}
+.icon-date{
+  background-color: white;
   border-radius: 50%;
 }

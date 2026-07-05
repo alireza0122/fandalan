@@ -18,7 +18,9 @@ export class HomeEvents {
       title: 'رویداد ایده پردازی هم سرنوشت',
       urlImg: '/img/mvBTmDqZ73gxnzboDmB5cQ9K2PCRHYmE5IGMcY36_.png',
       icon: '/img/Group198992.svg',
-      icononetitle: 'خانه فناوری های فرهنگی – اصفهان',
+      location: 'خانه فناوری های فرهنگی – اصفهان',
+      date:'از 12 اردیبهشت 1405',
+      price: 'رایگان',
     },
     {},
     {}
